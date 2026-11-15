@@ -1,0 +1,7 @@
+{
+  "name": "bilingual-auditor-deepseek-trial",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "engines": { "node": ">=24" }
+}

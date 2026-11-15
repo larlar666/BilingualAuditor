@@ -1,0 +1,23 @@
+{
+  "schema": "deepseek-phone-policy-v1",
+  "trialId": "deepseek-phone-hotspot-demo-v1",
+  "authority": "PHONE_HOTSPOT_DEMO_V1",
+  "model": "deepseek-flash",
+  "modelVersion": "DeepSeek-V4.1-Flash-1017",
+  "modelRepositoryCommit": "08c8657f02291e11b6f6b63e0e16014f8e748518",
+  "tokenizerSha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+  "encoderSha256": "13231c592e958fb39e2af6001dae69d90e7a36b265702b9b390236fb387599e2",
+  "tokenizersVersion": "0.22.2",
+  "currency": "CNY",
+  "inputPricePerMillion": 2,
+  "outputPricePerMillion": 8,
+  "maxInputTokens": 32768,
+  "maxOutputTokens": 4096,
+  "reservationMicroCny": 150000,
+  "maxAttempts": 20,
+  "totalMicroCny": 3000000,
+  "reviewedAt": "2026-11-13T05:11:56.000Z",
+  "expiresAt": "2026-11-14T05:11:56.000Z",
+  "pricingSource": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "evidenceScope": "OFFICIAL_PINNED_TEXT_TEMPLATE_PER_ACTUAL_PAYLOAD_PLUS_JSON_FORMAT_VARIANT_NOT_HOSTED_BILLING_GUARANTEE"
+}

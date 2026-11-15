@@ -1,0 +1,109 @@
+{
+  "version": "0.3.1",
+  "updated_at": "2026-10-23T14:46:45.3345932+08:00",
+  "update_schema": 1,
+  "package_source": "codex-teammode-workflow",
+  "package_commit": "521c6331c13c65dac0c7f6112d4c70b833f0770d",
+  "managed_files": {
+    "AGENTS.md": {
+      "strategy": "managed-block",
+      "installed_sha256": "336491a7d82545efaec0767726a6eea07ccb091086f357c99546d52949d2e362"
+    },
+    "CLAUDE.md": {
+      "strategy": "managed-block",
+      "installed_sha256": "9e7d11e600e88f63ec5d31d711ba5c6de826fd61b8d0e1de4911fe2649d20e04"
+    },
+    "docs/README.md": {
+      "strategy": "managed-block",
+      "installed_sha256": "379d0875d5fddebfc1574da374458ffed2d6cf4292447c7265e53972bf6b37ff"
+    },
+    "docs/workflow/team-loop-core.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "cce9ffa5060dde3601cb050a3b7055d08bafdf8a36622099e107a01e98ac13f4"
+    },
+    "docs/workflow/team-loop.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "6519f5cf1301c70897db1cb93db614bd565261cf229cfbb3ea869abf5de9b729"
+    },
+    "docs/workflow/team-loop-roles/leader.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "d40544147de3446c18ad4a014df15903d1d319a9763ce1a63daf6a1fee98a193"
+    },
+    "docs/workflow/team-loop-roles/planner.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "922494ac20f0a03e22a017f6935819d06d1ab92f59ddc3a6c7f2bf8b9c3bbc12"
+    },
+    "docs/workflow/team-loop-roles/generator.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "611f0a8017e411dc2d918a142fe75e26d6fe7a815c1b3924cb0e9866a6863b98"
+    },
+    "docs/workflow/team-loop-roles/scout.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "2849f6af4d84e98c65d68dec2c02e8e13f77cc4eb076c1c2534caa55af1fb136"
+    },
+    "docs/workflow/team-loop-roles/evaluator.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "777943db26d689835a76eb8cb4de60697c8cdfcff7373942b128ab4a6f82316a"
+    },
+    "docs/workflow/docs-maintenance.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "f3191bc6d7d352a23f6db21f78b92628e58ad6bdd3cae9e3996eeb9e3bd2d2e8"
+    },
+    "docs/workflow/update-policy.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "022ab69333f25b2b17d395853cc73560f795d5220416f891a1a57dcf4d36c6fb"
+    },
+    "workflow/audit-first.md": {
+      "strategy": "replace-workflow",
+      "installed_sha256": "7f564106935cd1d23c3a2598f81ab61075a7909d37942db5e9e3861f0f32b35e"
+    },
+    "docs/product/current-state.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "fbaa591a5a2d34e156980666b8370c5a30acc9a36d6cfb659159986e707f644a"
+    },
+    "docs/product/active-directions.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "364b49549087bb2cd0045cf7247feb84f488a7eea246f3b1f0b361ab5f6cb56b"
+    },
+    "docs/architecture/system-map.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "c3f03d3b01ec930a14aff5a0266be2141f9bb3d49292274322956d2810854142"
+    },
+    "docs/architecture/ia-and-navigation.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "acf9d54ba92ad22533a2e4bba6165506faf6bd4bfc23c5643cb2f465a7c63370"
+    },
+    "docs/architecture/domain-boundaries.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "f19e859f76752bd1f8311fff8bc2f98040c83a93693aaa4c1685451f774add1b"
+    },
+    "docs/handoff/latest.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "8a9228ee3b48c8dcfa13b935d63925ce8aac27ad0498aff63f058df61dc2dd63"
+    },
+    "docs/handoff/archive/README.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "d1269f773b523ddc6098470d4fedad359219b0c500c702ce105e9d719f51cd6d"
+    },
+    "docs/plans/tech-debt.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "594f89a5e253757b182a58345b1f90f10ed5f9c463ec7f2a80ca1ffe97467fc1"
+    },
+    "docs/plans/active/README.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "98c9c993abc59e7b0212e2c43ef754a6f224941f631910c9c49154c4a51e7e2d"
+    },
+    "docs/plans/completed/README.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "aa28c6401ffcaddcbc73ea7927bccd9199aa57d16aa7095823b4c289bab4da0b"
+    },
+    "docs/evidence/README.md": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "2ca67ba7c3906cf74176a657ba47518a4ce95bc1b811b33661a082c46aa94829"
+    },
+    "docs/workflow/LICENSE.codex-teammode.txt": {
+      "strategy": "create-if-missing",
+      "installed_sha256": "d12250f3f186cf35dc2628761101ad9a618b1ef4b387077c4fb3ee8b56c472af"
+    }
+  }
+}

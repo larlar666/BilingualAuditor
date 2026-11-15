@@ -1,0 +1,7 @@
+{
+  "name": "bilingual-auditor-phone-proxy",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": { "test": "node --disable-warning=ExperimentalWarning --test test/*.test.mjs" }
+}

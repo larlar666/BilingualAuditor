@@ -1,0 +1,4 @@
+今天开始学习 Kotlin，准备开发 Android 应用。
+
+Practice makes perfect.
+我希望保留这一句英文：Keep going!

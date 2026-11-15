@@ -1,0 +1,16 @@
+{
+  "name": "bilingual-auditor-translation-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "verify:local-d1": "node tools/verify-local-d1.mjs",
+    "verify:local-transport": "node tools/verify-local-transport.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "wrangler": "4.158.0"
+  }
+}

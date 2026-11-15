@@ -1,0 +1,18 @@
+name = "bilingual-auditor-deepseek-trial"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-06"
+workers_dev = true
+
+[observability]
+enabled = false
+
+[vars]
+# Only the reviewed private trial tool may temporarily enable this fixed trial.
+DEEPSEEK_TRIAL_ENABLED = ""
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bilingual-auditor-deepseek-trial-budget"
+# Must be replaced with the separately created trial DB ID before deployment.
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"

@@ -1,0 +1,22 @@
+name = "bilingual-auditor-translation"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-06"
+workers_dev = true
+
+# Remain on Workers Free. Do not enable observability payload logging.
+[observability]
+enabled = false
+
+[vars]
+MONTHLY_CHARACTER_BUDGET = "1000000"
+REQUESTS_PER_MINUTE = "6"
+# Must be set after checking that this is a dedicated Translator F0 resource.
+AZURE_TIER_CONFIRMED = ""
+# Temporary authenticated enums only; the one-shot tool always restores this to empty.
+SAFE_UPSTREAM_DIAGNOSTICS = ""
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bilingual-auditor-translation-budget"
+database_id = "003ed1e0-0471-40e3-b54e-a3d37e211440"
+migrations_dir = "migrations"

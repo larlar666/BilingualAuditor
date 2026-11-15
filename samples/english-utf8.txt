@@ -1,0 +1,4 @@
+Today I started building my bilingual reading app.
+
+Practice makes perfect.
+Kotlin, Android, and UTF-8 should remain readable.
