@@ -160,6 +160,14 @@ class HttpsTranslationClient : TranslationClient, ProxyHealthClient {
 }
 
 fun translationErrorMessage(code: String): String = when (code) {
+    "INVALID_KEY" -> "⚠️ 请输入有效的 DeepSeek Key；不允许空白或控制字符。"
+    "KEY_LOAD_FAILED" -> "无法读取保存的 Key，请重新输入；旧记录未自动删除。"
+    "KEY_SAVE_FAILED" -> "Key 配置未应用：持久记录操作失败，原配置保留。"
+    "KEY_DELETE_FAILED" -> "Key 未清除：记录删除失败，请重试。"
+    "KEY_CLEANUP_PENDING" -> "Key 内存和密文已清除，但系统密钥清理失败，请再次删除完成清理。"
+    "DEEPSEEK_UNAUTHORIZED" -> "DeepSeek Key 无效或已撤销，请检查 Key。"
+    "DEEPSEEK_FORBIDDEN" -> "DeepSeek 拒绝访问，请检查账户权限。"
+    "DEEPSEEK_BALANCE" -> "DeepSeek 账户余额不足，请自行检查账户。"
     "INVALID_CONFIG" -> "请配置有效的 HTTPS 翻译服务地址及个人访问凭证。"
     "TEXT_TOO_LONG" -> "文段超过翻译长度上限，原文已保留。"
     "UNAUTHORIZED" -> "访问凭证无效或已撤销，请检查试用配置。"

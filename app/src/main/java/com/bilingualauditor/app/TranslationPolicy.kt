@@ -18,12 +18,12 @@ object TranslationPolicy {
     }
 }
 
-enum class TranslationMode { GENERIC_HTTPS, TEMP_PC_DEEPSEEK }
+enum class TranslationMode { GENERIC_HTTPS, TEMP_PC_DEEPSEEK, DEEPSEEK_DIRECT }
 
 /** Kept only in memory. Never contains a provider API key. */
 class TranslationSettings(val endpoint: String, val accessToken: String,
     val mode: TranslationMode = TranslationMode.GENERIC_HTTPS, val certificatePin: String = "") {
-    val valid: Boolean get() = TranslationEndpoint.isValid(endpoint) && isValidToken(accessToken) &&
+    val valid: Boolean get() = mode != TranslationMode.DEEPSEEK_DIRECT && TranslationEndpoint.isValid(endpoint) && isValidToken(accessToken) &&
         (mode == TranslationMode.GENERIC_HTTPS || (PinnedTls.isPrivateIpv4(java.net.URI(endpoint).host) &&
             PinnedTls.normalizePin(certificatePin) != null))
     override fun toString(): String = "TranslationSettings(redacted)"
